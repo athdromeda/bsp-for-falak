@@ -1,4 +1,6 @@
 name: Release
+permissions:
+  contents: write
 
 on:
   workflow_dispatch:
@@ -23,4 +25,4 @@ jobs:
           tag_name: ${{ github.event.inputs.tag }}
           files: dist/*
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
