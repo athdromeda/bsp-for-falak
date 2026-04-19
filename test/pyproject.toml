@@ -1,0 +1,15 @@
+[project]
+name = "bsp-tests"
+version = "0.1.0"
+description = "Verification tests for minified BSP kernels"
+dependencies = [
+    "pytest",
+    "skyfield",
+    "spiceypy",
+    "astropy",
+    "jplephem",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
