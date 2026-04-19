@@ -2,7 +2,7 @@
 set -e
 
 BASE_URL="https://naif.jpl.nasa.gov/pub/naif/generic_kernels/spk/planets"
-TARGETS=("442s")
+TARGETS=("421" "430" "435" "440" "442" "442s")
 DIST_DIR="dist"
 
 LOCAL_MODE=false
